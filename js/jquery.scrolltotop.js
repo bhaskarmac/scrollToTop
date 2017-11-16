@@ -10,6 +10,7 @@
       bottom  : '50px',
       right   : '50px',
       bgColor : '#000',
+      bgImage: 'img/defaultScrollIcon.png',
       color: '#fff'
     }, options);
 
@@ -34,10 +35,20 @@
     }
 
     if (settings.bgColor) {
-      $(this).css('background-color', settings.bgColor );
+      if (!settings.bgImage) {
+        $(this).css('background-color', settings.bgColor );
+      }else{
+        console.log('background image applied!')
+      }
+    }
+
+    if (settings.bgImage) {
+      $(this).css('background-image', 'url('+settings.bgImage+')');
+      $(this).css('background-size', '100%');
+      $(this).css('background-repeat', 'no-repeat');
     }
 
 
   };
-
+  
 }(jQuery));
