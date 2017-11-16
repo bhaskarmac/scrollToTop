@@ -2,7 +2,7 @@
 
   $.fn.scrollToTop = function(options) {
 
-    //Adding default settings to the plugin
+    //Default setting to plugin, if user not applied anything
     var settings = $.extend({
       position: 'fixed',
       height: '50px',
@@ -43,12 +43,10 @@
     }
 
     if (settings.bgImage) {
-      $(this).css('background-image', 'url('+settings.bgImage+')');
-      $(this).css('background-size', '100%');
-      $(this).css('background-repeat', 'no-repeat');
+      $(this).css({'background-image':'url('+settings.bgImage+')', 'background-size':'100%', 'background-repeat':'no-repeat'});
     }
 
 
   };
-  
+
 }(jQuery));
