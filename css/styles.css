@@ -4,11 +4,37 @@
 	margin:0;
 	padding:0;
 }
+
 body{
 	padding: 100px;
 	font-family: Roboto;
 	font-size: 20px;
 }
+
 p{
 	text-align: justify;
+}
+
+/* Scroll to Top Button Styling */
+.scrollTop {
+	display: none;
+	padding: 10px;
+	background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+	color: white;
+	border-radius: 5px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+	transition: all 0.3s ease-in-out;
+	cursor: pointer;
+	font-weight: bold;
+	user-select: none;
+}
+
+.scrollTop:hover {
+	background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+	transform: translateY(-3px);
+}
+
+.scrollTop:active {
+	transform: translateY(-1px);
 }
