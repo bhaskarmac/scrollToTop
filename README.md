@@ -3,9 +3,17 @@
 Introduction
 A simple plug-in to add the scroll to top image/symbol to your web page
 
+USAGE
+Initialize the plugin with custom options:
 
-TO-DO
-1. Add more style to the button
-2. Add functionality to button
-3. Add feature of setting the icon to the button
-4. Add feature of setting the position to display the button when page scrolled
+```javascript
+$(document).scrollToTop({
+  bottom: "30px", // Bottom position
+  right: "30px", // Right position
+  bgColor: "#667eea", // Background color
+  text: "↑ TOP", // Button text/icon
+  fontSize: "14px", // Text font size
+  scrollThreshold: 100, // Pixels to scroll before showing button
+  duration: 300, // Animation duration in milliseconds
+});
+```
